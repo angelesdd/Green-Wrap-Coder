@@ -1,0 +1,551 @@
+@import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@600&family=Roboto:wght@100&family=Ysabeau+Office&display=swap');
+
+    /*font-family: 'Klee One', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Ysabeau Office', sans-serif;*/
+
+
+    /* PENDIENTES: TERMINAR DE ESTILAR NEWS, NOSOTROS, UTILIZAR CRITERIO DE MOBILE-FIRST EN TODOS LOS MEDOA QUERIES, VER SI ES NECESARIO REDUCIR LA CALIDAD DE LAS IMAGENES, VER SONIDO DE VIDEOS */
+
+
+/* INICIO STYLE HEADER */
+
+
+.cabecera{
+    background-color: green;
+    width: 100%;
+    font-family:'Klee One';
+    font-weight: 100;
+    font-size:22px;
+    padding:1vh;
+}
+
+
+
+/* FIN STYLE HEADER */
+
+
+ /* INICIO STYLE FOOTER */
+
+ .piedepagina{
+    background-color: green;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.seguinos{
+    padding-left: 1%;
+    height: 50%;
+    font-family:'Ysabeau Office', sans-serif;
+    font-size:20px;
+    color:white;
+}
+
+.iconos{
+    padding-right: 1%;
+    height: 50%;
+    font-size:30px;
+    color:white;
+}
+
+.anclas__footer{
+    color: white;
+}
+
+.anclas__footer:hover{
+    color:rgb(162, 152, 152);
+}
+
+
+/* FIN STYLE FOOTER */
+
+
+/* INICIO STYLE INDEX */
+
+.main__index{ /*¿Ya sabes que vas a pedir?*/
+    height:calc(100vh-80px);
+    width: 100%;
+
+}
+
+.index__fondo{ /*¿Ya sabes que vas a pedir?*/
+    background-image:url(multimedia/fondo_index.jpg);
+    background-size:cover;
+    background-position:center;
+    padding-bottom: 5vw;
+}
+
+.titulo{ /*¿Ya sabes que vas a pedir?*/
+    font-family:'Ysabeau Office', sans-serif;
+    font-size:20px;
+    text-align: center;
+    background-color: rgba(214, 214, 202, 0.333);
+    padding: 5vh;
+    color: black;
+
+}
+
+.caja_grande1{ /*¿Ya sabes que vas a pedir?*/
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 5vw;
+}
+
+@media only screen and (min-width: 1000px){
+    .caja_chica1{
+        background-color: rgba(214, 214, 202, 0.333);
+        border-radius: 10px;
+        color: black;
+    }
+    .caja_chica1{
+        font-size:25px;
+        width: 15%;
+        list-style-type: none;
+        
+    }
+}
+
+.titulo_cchica1 a{
+    font-weight: bold;
+    text-align:center;
+    font-family:'Ysabeau Office', sans-serif;
+    text-decoration:none;
+    color:black;
+    width: 15%;
+    
+    
+}
+
+.titulo_cchica1 a:hover{
+    color:rgb(162, 152, 152);
+
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .lista_cchica1 {
+        display: none;
+
+     }
+     .titulo_cchica1 a{
+        background-color: rgba(214, 214, 202, 0.333);
+        justify-content: space-around;
+        font-size:20px;
+        border-radius: 4px;
+        
+     }
+     
+    }
+    
+
+
+.card{ /*Estilado contenedor general del menu*/
+    margin: 10vh auto;
+    border: 3px solid green;
+    width: 90%;
+    list-style-type: none;
+}
+
+.tarjeta__menu{ /*Estilado de la tarjeta contenedora de los menu - utilizar mobile-first*/
+    min-height: 350px;
+    background-color: rgb(207, 212, 217);
+    
+    
+}
+
+
+
+.nleft_veggie{ /*Centramos verticalmente el contenido del menu. Mobile first*/
+    margin: auto 0;
+    
+
+}
+.nleft_vegetarianos{
+    margin: auto 0;
+    
+}
+.nleft_tradicionales{
+    margin: auto 0;
+}
+.nleft_especiales{ 
+    margin: auto 0;
+}
+
+
+.nright_veggie{ /*mobile first*/
+    background-image:url(./multimedia/veggie.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+}
+.nright_vegetarianos{ /*mobile first*/
+    background-image:url(./multimedia/vegetarianos.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+}
+.nright_tradicionales{ /*mobile first*/
+    background-image:url(./multimedia/tradicionales.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+}
+.nright_especiales{ /*mobile first*/
+    background-image:url(./multimedia/especiales.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+}
+
+
+
+@media only screen and (max-width: 576px){
+    .nright_veggie{
+        display: none;
+    }
+    .nleft_veggie{
+        background-image:url(./multimedia/veggie.jpg);
+        background-size: cover;
+        background-position: center;
+        min-height: 400px;
+        font-weight: 500;
+        color: black;
+    }
+    .nright_vegetarianos{
+        display: none;
+    }
+    .nleft_vegetarianos{
+        background-image:url(./multimedia/vegetarianos.jpg);
+        background-size: cover;
+        background-position: center;
+        min-height: 400px;
+        font-weight: 500;
+        color: black;
+    }
+    .nright_tradicionales{
+        display: none;
+    }
+    .nleft_tradicionales{
+        /*background: linear-gradient(to top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(./multimedia/garbanzos.png);*/
+        background-image:url(./multimedia/tradicionales.jpg);
+        background-size: cover;
+        background-position: center;
+        min-height: 400px;
+        font-weight: 500;
+        color: black;
+    }
+    .nright_especiales{
+        display: none;
+    }
+    .nleft_especiales{
+        background-image:url(./multimedia/especiales.jpg);
+        background-size: cover;
+        background-position: center;
+        min-height: 400px;
+        font-weight: 500;
+        color: black;
+    }
+    .fondo_card{
+        margin: 10vh auto;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 10px;
+    }
+  
+}
+
+
+#veggie{
+    font-size:19px;
+    margin-bottom: 2vh;
+    margin-top: 1vh;
+    
+}
+
+#vegetarianos{
+    font-size:19px;
+    margin-bottom: 2vh;
+    margin-top: 1vh;
+     
+}
+
+#tradicionales{
+    font-size:19px;
+    margin-bottom: 2vh;
+    margin-top: 1vh;
+}
+#especiales{
+    font-size:19px;
+    margin-bottom: 2vh;
+    margin-top: 1vh;
+}
+.sub_cchica12{
+    text-decoration: underline;
+    
+}
+
+
+/* FIN STYLE INDEX */
+
+
+
+/* INICIO STYLE PEDIDOS */
+
+.promos{
+    /*margin: 3vh auto;*/
+    width: 100%;
+    padding: 2vh 0;
+    /* background-color: green; Se puede poner el fondo verde */
+}
+
+.titulo_promo{
+    color: white;
+    text-align: center;
+    height: 25%;
+    padding-top:2%;
+}
+
+
+.pedidos{
+    background-image: url(multimedia/fondo_pedidos.jpg);
+    background-size:cover;
+    background-position:center;
+    color: white;
+    list-style-type: none;
+    height: 18vh;
+}
+
+.promo__izquierda{
+    padding: 0;
+}
+
+.combo{
+    list-style-type: none;
+    background-color: rgb(207, 212, 217);
+    padding-left: 1.5%;
+    width: 95%;
+    margin: 2% auto;
+    padding-bottom: 15px;
+    
+}
+
+.combo__titulo{
+    padding-top: 15px;
+    
+}
+
+
+
+.titulo_promo{
+    color: white;
+    text-align: center;
+    height: 25%;
+    padding-top:2%;
+}
+
+
+@media only screen and (max-width: 637px){
+    .prom{
+        display: none;
+    }
+    .titulo_promo{
+        padding-top:6vh;
+    }
+}
+
+
+
+.promo__derecha{
+    
+    background-image: url(multimedia/pedidos_aside.jpg);
+    background-size:cover;
+    background-position:center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+
+}
+
+.duda{
+    background-color:rgba(255, 255, 255, 0.5);
+    height: 50%;
+    padding: 2vh 0;
+
+}
+
+.titulo_duda{
+    text-align: center;
+}
+.detallanos{
+    padding-top: 15px;
+}
+
+.mapa{
+    background-color:rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+
+.monumento{
+    width: 100%;
+}
+
+.wsp{
+    
+    text-align: end;
+    font-size: 3rem;
+}
+
+
+/* FIN STYLE PEDIDOS */
+
+/* INICIO STYLE FORMULARIO */
+
+.main_contacto{
+    min-height: 80vh;
+}
+
+
+.contacto{
+    padding-top:1%;
+    ;
+}
+.titulo_contacto{
+    margin-left: 5vh;
+    color: green;
+}
+
+.contacto_titulo{
+    margin-left: 5vh;
+}
+
+.formulario{
+    background-image:url(multimedia/contacto.jpg);
+    background-size:cover;
+    background-position:center;
+    margin: 5vh;
+    padding:2%;
+    
+}
+
+.casillas{
+    /* padding: 2% 0; */
+    align-items: center;
+    text-align: center;
+}
+
+
+.datos{
+    width: 70%;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 0.5vh 0;
+}
+
+.datos::placeholder{
+    color: black;
+}
+
+.botones{
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+/* FIN STYLE FORMULARIO */
+
+
+/* INICIO STYLE NEWS */
+
+/* Aplicamos metodo MOBILE-FIRST */
+
+.main_news{
+    min-height: 80vh;
+}
+
+.box_carrusel{
+    height: 550px;
+}
+.carrusel{
+    margin: 4vh;
+    
+    
+}
+
+
+.videocut{
+    height: 500px;
+}
+
+.card_news{
+    padding: 3%;
+    padding-top: 5%;
+    min-height: 500px;
+}
+
+
+
+.foto_envasado{
+    max-width: 100%;
+    height: auto;
+
+    
+}
+.not_plastic{
+    background-image:url(multimedia/envasado.jpg);
+}
+
+.news_envasado{
+    display: none;
+}
+
+
+
+
+.foto_tuna{
+    min-width: auto;
+    max-height: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+@media only screen and (min-width: 577px) {  
+    .not_plastic{
+        background-image:none;
+    }
+    .news_envasado{
+        display:initial;
+    }
+    .carrusel{
+        min-height: 500px;
+        background-color: rgb(207, 212, 217);
+        
+    }
+    .box_carrusel{
+        height: 500px;
+    }
+    .box_carrusel_dif{
+        background-image: none;
+    }
+    
+    .foto_proxhor{
+        background-image: none;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.info{
+    float:right;
+    padding-right:4%;
+}
+
+
+/* FIN STYLE NEWS */
