@@ -1,0 +1,114 @@
+/*Estilado del news*/
+
+.main_news{
+    min-height: 80vh;
+}
+
+
+.news__contenedor__carrusel{
+    background-color:map-get($fondos,solido_grisclaro);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.news__box__carrusel{
+    height: 100%;
+    align-items: center;
+}
+
+.news__box__card1{
+    height: 500px;
+}
+
+.news__box__card1__texto{
+    @include fondo_gen(envasado);
+    min-width: auto;
+    height: 100%;
+    padding-top: 15%;
+}
+.news__card1__texto{
+    background-color:map-get($fondos,transp_grisclaro);
+}
+
+.news__card1__info{
+    display: none;
+} 
+
+.news__card1__box__foto{
+    display: none;
+}
+.news__card__fotov{
+    min-width: auto;
+    max-height: 500px;
+    display: none;
+}
+
+.news__card2__box__foto{
+    display: flex;
+    justify-content: center;
+}
+
+.news__card2__foto{
+    min-width: auto;
+    max-height: 500px;
+    justify-content: center;
+    
+}
+
+.news__box__video{
+    height: 500px;
+}
+
+.news__card3__box__foto{
+    display: none;
+}
+
+
+@media only screen and (min-width: 769px) {  
+    .news__contenedor__carrusel{
+        margin: 4vh;
+        min-height: 500px;
+        background-color:map-get($fondos,solido_grisclaro);
+        
+    }
+    
+    .news__box__card1__texto{
+        background-image:none;
+        padding-top:8%;
+    }
+    .news__card1__box__foto{
+        display:initial;
+        
+    }
+    .news__box__carrusel{
+        height: 500px;
+    }
+    .news__foto__proxhor{
+        margin-left: auto;
+        margin-right: auto;
+        max-height:100%;
+        display: initial;
+    }
+    .news__foto__vert{
+        display: none;
+    }
+    .news__card3__box__foto{
+        display: initial;
+    }
+    .news__card__fotov{
+        min-width: 50%;
+        display: block;
+    }
+    .news__card1__texto{
+        background-color: initial;
+    }
+    .news__card1__info{
+        display: initial;
+        float:right;
+        padding-right:3%;
+        text-decoration: none;
+        color: map-get($colores, verde);
+        
+    }
+    
+}
+

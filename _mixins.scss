@@ -1,0 +1,35 @@
+
+@mixin menu_anclas(){
+    font-size:19px;
+    margin-bottom: 2vh;
+    margin-top: 1vh;
+}
+
+@mixin nright($image){
+    $url: "./multimedia/#{$image}.jpg";
+    background-image:url($url);
+    background-size: cover;
+    background-position: center;
+    min-height: 400px; /*Cambiar a vh*/
+}
+
+@mixin nleft(){
+    margin: 0 auto;
+}
+
+@mixin nleft_mobile($image){
+    $url: "./multimedia/#{$image}.jpg";
+    background-image:url($url);
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    font-weight: 500;
+    color: map-get($colores, negro);
+}
+
+@mixin fondo_gen($image){
+    $url: "./multimedia/#{$image}.jpg";
+    background-image:url($url);
+    background-size: cover;
+    background-position: center;
+}

@@ -361,13 +361,20 @@
 }
 
 .nosotros__contenedor__amigas {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: rgb(207, 212, 217);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   z-index: -1;
   min-height: 70vh;
   display: flex;
   flex-wrap: wrap-reverse;
-  margin: 1%;
+}
+
+.nosotros__contenedor__fotodelantal {
+  height: 100%;
+}
+
+.nosotros__contenedor__fotonosotras {
+  width: 0;
 }
 
 .nosotros__fotonosotras {
@@ -376,27 +383,32 @@
 }
 
 .nosotros__fotodelantal {
-  margin-top: 4%;
   height: 25vh;
-  width: 100%;
-  object-fit: cover;
+  border: 3px solid green;
+  padding: initial;
+  display: block;
 }
 
 .nosotros__contenedor__amigastexto {
+  border: 3px solid red;
   margin-top: 6%;
   padding-top: 8%;
   padding-left: 2%;
   padding-right: 2%;
 }
 
+.nosotros__amigastexto {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
 .nosotros__fotonosotras__mobile {
   position: absolute;
   height: auto;
-  width: 135px;
+  width: 140px;
   z-index: 1;
   border: 3px solid white;
-  margin-left: 60%;
-  margin-top: 10%;
+  margin-left: 70%;
+  margin-top: 6%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -413,31 +425,25 @@
     margin-top: 23%;
   }
   .nosotros__fotodelantal {
-    margin: initial;
-    padding: initial;
     display: initial;
     height: 70vh;
     width: 100%;
     object-fit: cover;
-    padding-top: 8%;
-    padding-bottom: 8%;
+    padding: 3% 0;
+  }
+  .nosotros__contenedor__amigastexto {
+    background-image: none;
   }
   .nosotros__contenedor__fotonosotras {
     width: 25%;
   }
-  .nosotros__contenedor__amigastexto {
-    padding: 5% 2%;
-    margin: initial;
+  .nosotros__amigastexto {
+    background-color: initial;
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 960px) {
   .nosotros__fotodelantal {
-    height: 85vh;
-  }
-}
-@media only screen and (max-width: 450px) {
-  .nosotros__fotonosotras__mobile {
-    display: none;
+    height: 80vh;
   }
 }
 /*Estilado del news*/
@@ -543,10 +549,8 @@
   .news__card1__info {
     display: initial;
     float: right;
-    padding-right: 3%;
-    text-decoration: none;
-    color: green;
+    padding-right: 4%;
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=watch.css.map */
