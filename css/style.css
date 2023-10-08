@@ -1,0 +1,523 @@
+@import url("https://fonts.googleapis.com/css2?family=Klee+One:wght@600&family=Roboto:wght@100&family=Ysabeau+Office&display=swap");
+.cabecera {
+  background-color: green;
+  font-family: "Klee One";
+  font-weight: 100;
+  font-size: 1.37rem;
+  padding: 1vh;
+}
+
+/*Estilado del footer*/
+.piedepagina {
+  background-color: green;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.piedepagina .seguinos {
+  padding-left: 1%;
+  height: 50%;
+  font-family: "Ysabeau Office";
+  font-size: 1.25rem;
+  color: white;
+}
+.piedepagina .iconos {
+  padding-right: 1%;
+  padding-bottom: 3.3%;
+  height: 50%;
+  font-size: 1.87rem;
+  color: white;
+}
+.piedepagina .anclas__footer {
+  color: white;
+}
+.piedepagina .anclas__footer:hover {
+  color: rgb(162, 152, 152);
+}
+
+/*Estilado del index*/
+.main__index {
+  min-height: 100vh;
+  width: 100%;
+}
+.main__index .index__fondo {
+  background-image: url("../multimedia/fondo_index.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 5vw;
+}
+.main__index .index__fondo .index__titulo {
+  font-family: "Ysabeau Office", sans-serif;
+  font-size: 1.25rem;
+  text-align: center;
+  background-color: rgba(214, 214, 202, 0.333);
+  padding: 5vh;
+  color: black;
+}
+.main__index .index__fondo .index__menu {
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 5vw;
+}
+.main__index .index__fondo .index__menu .index__cajachica__ancla {
+  font-weight: bold;
+  text-align: center;
+  font-family: C, sans-serif;
+  text-decoration: none;
+  color: black;
+  width: 15%;
+}
+.main__index .index__fondo .index__menu .index__cajachica__ancla:hover {
+  color: rgb(162, 152, 152);
+}
+.main__index .index__contenedorcard {
+  margin: 10vh auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 90%;
+  list-style-type: none;
+}
+.main__index .index__contenedorcard .index__card {
+  min-height: 10vh;
+  background-color: rgb(207, 212, 217);
+}
+.main__index .index__contenedorcard .index__card .index__card__fondoveggie, .main__index .index__contenedorcard .index__card .index__card__fondovegetarianos, .main__index .index__contenedorcard .index__card .index__card__fondotradicionales, .main__index .index__contenedorcard .index__card .index__card__fondoespeciales {
+  display: none;
+}
+.main__index .index__contenedorcard .index__card .index__card__contenidoveggie {
+  background-image: url("../multimedia/veggie.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 400px;
+  font-weight: 500;
+  color: black;
+}
+.main__index .index__contenedorcard .index__card .index__card__contenidovegetarianos {
+  background-image: url("../multimedia/vegetarianos.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 400px;
+  font-weight: 500;
+  color: black;
+}
+.main__index .index__contenedorcard .index__card .index__card__contenidotradicionales {
+  background-image: url("../multimedia/tradicionales.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 400px;
+  font-weight: 500;
+  color: black;
+}
+.main__index .index__contenedorcard .index__card .index__card__contenidoespeciales {
+  background-image: url("../multimedia/especiales.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 400px;
+  font-weight: 500;
+  color: black;
+}
+.main__index .index__contenedorcard .index__card .index__card__contenido__fondo {
+  margin: 10vh auto;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+.main__index .index__contenedorcard .index__card .index__card__contenido__fondo #veggie, .main__index .index__contenedorcard .index__card .index__card__contenido__fondo #vegetarianos, .main__index .index__contenedorcard .index__card .index__card__contenido__fondo #tradicionales, .main__index .index__contenedorcard .index__card .index__card__contenido__fondo #especiales {
+  font-size: 1.19rem;
+  margin-bottom: 2vh;
+  margin-top: 1vh;
+}
+.main__index .index__contenedorcard .index__card .index__card__contenido__fondo #veggie .index__card__subtitulo, .main__index .index__contenedorcard .index__card .index__card__contenido__fondo #vegetarianos .index__card__subtitulo, .main__index .index__contenedorcard .index__card .index__card__contenido__fondo #tradicionales .index__card__subtitulo, .main__index .index__contenedorcard .index__card .index__card__contenido__fondo #especiales .index__card__subtitulo {
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 576px) {
+  .main__index .index__contenedorcard .index__card .index__card__fondoveggie {
+    display: initial;
+    background-image: url("../multimedia/veggie.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 400px; /*Cambiar a vh*/
+  }
+  .main__index .index__contenedorcard .index__card .index__card__fondotradicionales {
+    display: initial;
+    background-image: url("../multimedia/tradicionales.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 400px; /*Cambiar a vh*/
+  }
+  .main__index .index__contenedorcard .index__card .index__card__fondovegetarianos {
+    display: initial;
+    background-image: url("../multimedia/vegetarianos.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 400px; /*Cambiar a vh*/
+  }
+  .main__index .index__contenedorcard .index__card .index__card__fondoespeciales {
+    display: initial;
+    background-image: url("../multimedia/especiales.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 400px; /*Cambiar a vh*/
+  }
+  .main__index .index__contenedorcard .index__card .index__card__contenidoveggie, .main__index .index__contenedorcard .index__card .index__card__contenidovegetarianos, .main__index .index__contenedorcard .index__card .index__card__contenidotradicionales, .main__index .index__contenedorcard .index__card .index__card__contenidoespeciales {
+    margin: 0 auto;
+    background-image: none;
+  }
+  .main__index .index__contenedorcard .index__card .index__card__contenido__fondo {
+    background-color: initial;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .main__index .index__fondo .index__menu .index__menu__gustos__lista {
+    display: none;
+  }
+  .main__index .index__fondo .index__menu .index__cajachica__ancla {
+    background-color: rgba(214, 214, 202, 0.333);
+    justify-content: start;
+    font-size: 1.25rem;
+    border-radius: 4px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .main__index .index__fondo .index__menu .index__menu__gustos {
+    background-color: rgba(214, 214, 202, 0.333);
+    border-radius: 10px;
+    color: black;
+    font-size: 1.56rem;
+    width: 15%;
+    list-style-type: none;
+  }
+}
+/*Estilado del pedidos*/
+.main__pedidos .pedidos__contenedor {
+  background-image: url("../multimedia/fondo_pedidos.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  list-style-type: none;
+  height: 18vh;
+}
+.main__pedidos .pedidos__contenedor .pedidos__contenedor__titulo {
+  color: white;
+  text-align: center;
+  height: 25%;
+  padding-top: 6vh;
+}
+.main__pedidos .pedidos__contenedor .pedidos__contenedor__promociones {
+  display: none;
+}
+.main__pedidos .pedidos__promociones {
+  width: 100%;
+  padding: 2vh 0;
+}
+.main__pedidos .pedidos__promociones .pedidos__promociones__iz {
+  padding: 0;
+}
+.main__pedidos .pedidos__promociones .pedidos__promociones__iz .pedidos__promociones__izcombo {
+  list-style-type: none;
+  background-color: rgb(207, 212, 217);
+  padding-left: 1.5%;
+  width: 95%;
+  margin: 2% 6%;
+  padding-bottom: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.main__pedidos .pedidos__promociones .pedidos__promociones__iz .pedidos__promociones__izcombo .pedidos__promociones__izcombotitulo {
+  padding-top: 15px;
+}
+.main__pedidos .pedidos__promociones .pedidos__dudas__der {
+  background-image: url("../multimedia/pedidos_aside.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+.main__pedidos .pedidos__promociones .pedidos__dudas__der .pedidos__dudas__derdetalle {
+  background-color: rgba(214, 214, 202, 0.333);
+  height: 50%;
+  padding: 2vh 0;
+}
+.main__pedidos .pedidos__promociones .pedidos__dudas__der .pedidos__dudas__derdetalle .pedidos__dudas__dertitulo {
+  text-align: center;
+}
+.main__pedidos .pedidos__promociones .pedidos__dudas__der .pedidos__dudas__derdetalle .pedidos__dudas__derdetallanos {
+  padding-top: 15px;
+  list-style-type: circle;
+}
+.main__pedidos .pedidos__promociones .pedidos__dudas__der .pedidos__dudas__derdetalle .pedidos__dudas__derdetallanos .pedidos__dudas__derwsp {
+  position: fixed;
+  font-size: 3rem;
+  bottom: 9%;
+  right: 0.9%;
+}
+.main__pedidos .pedidos__promociones .pedidos__dudas__der .pedidos__dudas__derdetalle .pedidos__dudas__derdetallanos .pedidos__dudas__derwsp .pedidos__dudas__dericonwsp {
+  color: green;
+}
+.main__pedidos .pedidos__promociones .pedidos__dudas__der .pedidos__dudas__derdetalle .pedidos__dudas__derdetallanos .pedidos__dudas__derwsp .pedidos__dudas__dericonwsp:hover {
+  color: green;
+}
+.main__pedidos .pedidos__promociones .pedidos__dudas__der .pedidos__dudas__dermapa {
+  background-color: rgba(214, 214, 202, 0.333);
+  text-align: center;
+}
+.main__pedidos .pedidos__promociones .pedidos__dudas__der .pedidos__dudas__dermapa .pedidos__dudas__dermonu {
+  width: 100%;
+}
+
+@media only screen and (min-width: 637px) {
+  .main__pedidos .pedidos__contenedor .pedidos__contenedor__titulo {
+    padding-top: 2%;
+  }
+  .main__pedidos .pedidos__contenedor .pedidos__contenedor__promociones {
+    display: block;
+  }
+  .main__pedidos .pedidos__promociones .pedidos__promociones__iz .pedidos__promociones__izcombo {
+    margin: 2% auto;
+  }
+}
+/*Estilado del contacto*/
+.main_contacto {
+  min-height: 85vh;
+}
+.main_contacto .contacto {
+  padding-top: 1%;
+}
+.main_contacto .contacto .contacto__titulo__sugerencia {
+  margin-left: 5vh;
+  color: green;
+}
+.main_contacto .contacto .contacto__titulo__datos {
+  margin-left: 5vh;
+}
+.main_contacto .contacto__formulario {
+  background-image: url("../multimedia/contacto.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 5vh;
+  padding: 2%;
+}
+.main_contacto .contacto__formulario__casillas {
+  align-items: center;
+  text-align: center;
+}
+.main_contacto .contacto__formulario__casillas .contacto__formulario__datos {
+  width: 70%;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 0.5vh 0;
+}
+.main_contacto .contacto__formulario__casillas .contacto__formulario__datos:hover {
+  color: black;
+}
+.main_contacto .contacto__formulario__botones {
+  width: 70%;
+  margin: 0 auto;
+}
+
+/*Estilado del error 404*/
+.main_error404 {
+  background-image: url("../multimedia/plato_vacio.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding: 15vh 0 15vh 0;
+}
+.main_error404 .box__error404 {
+  font-family: "Ysabeau Office", sans-serif;
+  color: white;
+  font-weight: bold;
+}
+.main_error404 .box__error404 .box__error404__texto__ancla {
+  padding-top: 3%;
+}
+.main_error404 .box__error404 .box__error404__texto__ancla .main__index__ancla {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: green;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+.main_error404 .box__error404 .box__error404__texto__ancla .main__index__ancla:hover {
+  color: rgb(162, 152, 152);
+}
+
+/*Estilado del nosotros*/
+.main__nosotros .nosotros__fotonosotras__mobile {
+  position: absolute;
+  height: auto;
+  width: 135px;
+  z-index: 1;
+  border: 3px solid white;
+  margin-left: 60%;
+  margin-top: 10%;
+}
+.main__nosotros .nosotros__contenedor {
+  padding: 2%;
+}
+.main__nosotros .nosotros__contenedor .nosotros__contenedor__amigas {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: rgb(207, 212, 217);
+  z-index: -1;
+  min-height: 70vh;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  margin: 1%;
+}
+.main__nosotros .nosotros__contenedor .nosotros__contenedor__amigas .nosotros__contenedor__amigastexto {
+  margin-top: 6%;
+  padding-top: 8%;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.main__nosotros .nosotros__contenedor .nosotros__contenedor__amigas .nosotros__contenedor__fotonosotras .nosotros__fotonosotras {
+  display: none;
+  width: 0;
+}
+.main__nosotros .nosotros__contenedor .nosotros__contenedor__amigas .nosotros__fotodelantal {
+  margin-top: 4%;
+  height: 25vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media only screen and (min-width: 768px) {
+  .main__nosotros .nosotros__fotonosotras__mobile {
+    display: none;
+  }
+  .main__nosotros .nosotros__contenedor .nosotros__contenedor__amigas .nosotros__contenedor__amigastexto {
+    padding: 5% 2%;
+    margin: initial;
+  }
+  .main__nosotros .nosotros__contenedor .nosotros__contenedor__amigas .nosotros__contenedor__fotonosotras {
+    width: 25%;
+  }
+  .main__nosotros .nosotros__contenedor .nosotros__contenedor__amigas .nosotros__contenedor__fotonosotras .nosotros__fotonosotras {
+    display: initial;
+    position: absolute;
+    height: auto;
+    width: 150px;
+    z-index: 1;
+    border: 3px solid white;
+    margin-top: 23%;
+  }
+  .main__nosotros .nosotros__contenedor .nosotros__contenedor__amigas .nosotros__fotodelantal {
+    margin: initial;
+    padding: initial;
+    display: initial;
+    height: 70vh;
+    width: 100%;
+    object-fit: cover;
+    padding-top: 8%;
+    padding-bottom: 8%;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 960px) {
+  .main__nosotros .nosotros__contenedor .nosotros__contenedor__amigas .nosotros__fotodelantal {
+    height: 85vh;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .main__nosotros .nosotros__fotonosotras__mobile {
+    display: none;
+  }
+}
+/*Estilado del news*/
+.main_news {
+  min-height: 80vh;
+}
+.main_news .news__contenedor__carrusel {
+  margin: 4vh;
+  background-color: rgb(207, 212, 217);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.main_news .news__contenedor__carrusel .news__box__carrusel {
+  height: 100%;
+  align-items: center;
+}
+.main_news .news__contenedor__carrusel .news__box__carrusel .news__box__card1 {
+  height: 500px;
+}
+.main_news .news__contenedor__carrusel .news__box__carrusel .news__box__card1 .news__box__card1__texto {
+  background-image: url("../multimedia/envasado.jpg");
+  background-size: cover;
+  background-position: center;
+  min-width: auto;
+  height: 100%;
+  padding-top: 15%;
+}
+.main_news .news__contenedor__carrusel .news__box__carrusel .news__box__card1 .news__box__card1__texto .news__card1__texto {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.main_news .news__contenedor__carrusel .news__box__carrusel .news__box__card1 .news__box__card1__texto .news__card1__info {
+  display: none;
+}
+.main_news .news__contenedor__carrusel .news__box__carrusel .news__box__card1 .news__card1__box__foto {
+  display: none;
+}
+.main_news .news__contenedor__carrusel .news__box__carrusel .news__card2__box__foto {
+  display: flex;
+  justify-content: center;
+}
+.main_news .news__contenedor__carrusel .news__box__carrusel .news__card2__box__foto .news__card2__foto {
+  min-width: auto;
+  max-height: 500px;
+  justify-content: center;
+}
+.main_news .news__contenedor__carrusel .news__box__carrusel .news__box__video {
+  height: 500px;
+}
+.main_news .news__contenedor__carrusel .news__box__carrusel .news__card3__box__foto {
+  display: none;
+}
+.main_news .news__contenedor__carrusel .news__box__carrusel .news__card__fotov {
+  min-width: auto;
+  max-height: 500px;
+  display: none;
+}
+
+@media only screen and (min-width: 769px) {
+  .main_news .news__contenedor__carrusel {
+    min-height: 500px;
+    background-color: rgb(207, 212, 217);
+  }
+  .main_news .news__contenedor__carrusel .news__box__carrusel {
+    height: 500px;
+  }
+  .main_news .news__contenedor__carrusel .news__box__carrusel .news__box__card1 .news__box__card1__texto {
+    background-image: none;
+    padding-top: 8%;
+  }
+  .main_news .news__contenedor__carrusel .news__box__carrusel .news__box__card1 .news__box__card1__texto .news__card1__texto {
+    background-color: initial;
+  }
+  .main_news .news__contenedor__carrusel .news__box__carrusel .news__box__card1 .news__box__card1__texto .news__card1__info {
+    display: initial;
+    float: right;
+    padding-right: 3%;
+    text-decoration: none;
+    color: green;
+  }
+  .main_news .news__contenedor__carrusel .news__box__carrusel .news__box__card1 .news__card1__box__foto {
+    display: initial;
+  }
+  .main_news .news__contenedor__carrusel .news__box__carrusel .news__card2__box__foto .news__foto__vert {
+    display: none;
+  }
+  .main_news .news__contenedor__carrusel .news__box__carrusel .news__card3__box__foto {
+    display: initial;
+  }
+  .main_news .news__contenedor__carrusel .news__box__carrusel .news__card3__box__foto .news__foto__proxhor {
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 100%;
+    display: initial;
+  }
+  .main_news .news__contenedor__carrusel .news__box__carrusel .news__card__fotov {
+    min-width: 50%;
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

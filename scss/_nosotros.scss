@@ -1,0 +1,109 @@
+/*Estilado del nosotros*/
+
+.main__nosotros{
+    .nosotros__fotonosotras__mobile{
+        position: absolute;
+        height:auto;
+        width:135px;
+        z-index: 1;
+        border: 3px solid white;
+        margin-left: 60%;
+        margin-top: 10%;
+    }
+    .nosotros__contenedor{
+        padding: 2%;  
+        .nosotros__contenedor__amigas{
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            background-color:map-get($fondos,solido_grisclaro);
+            z-index:-1;
+            min-height: 70vh;
+            display:flex;
+            flex-wrap: wrap-reverse;
+            margin: 1%;
+            .nosotros__contenedor__amigastexto{
+                    margin-top: 6%;
+                    padding-top: 8%;
+                    padding-left: 2%;
+                    padding-right: 2%;
+            }
+            .nosotros__contenedor__fotonosotras{
+                .nosotros__fotonosotras{
+                    display: none;
+                    width: 0;
+                }
+            }
+            .nosotros__fotodelantal{
+                margin-top: 4%;
+                height:25vh;   
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 768px) {  
+    .main__nosotros{
+        .nosotros__fotonosotras__mobile{
+            display:none;
+        }
+        .nosotros__contenedor{
+            
+            .nosotros__contenedor__amigas{             
+                .nosotros__contenedor__amigastexto{
+                    padding: 5% 2%;
+                    margin:initial;
+                }
+                .nosotros__contenedor__fotonosotras{
+                    width: 25%;
+                    .nosotros__fotonosotras{
+                        display: initial;
+                        position:absolute;
+                        height:auto;
+                        width:150px;
+                        z-index: 1;
+                        border: 3px solid white;
+                        margin-top: 23%;
+                    }
+                }
+                .nosotros__fotodelantal{
+                    margin:initial;
+                    padding: initial;
+                    display: initial;
+                    height: 70vh;
+                    width: 100%;
+                    object-fit: cover;
+                    padding-top:8%;
+                    padding-bottom:8%;
+                }
+            }
+        }
+    }
+    
+
+}
+
+
+@media only screen and (min-width: 769px) and (max-width: 960px){
+    .main__nosotros{
+        .nosotros__contenedor{            
+            .nosotros__contenedor__amigas{
+                .nosotros__fotodelantal{
+                    height: 85vh;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 450px){
+    .main__nosotros{
+        .nosotros__fotonosotras__mobile{
+            display: none;
+        }     
+    }  
+}
+

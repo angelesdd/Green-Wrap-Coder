@@ -1,12 +1,12 @@
 
 @mixin menu_anclas(){
-    font-size:19px;
+    font-size:1.19rem;
     margin-bottom: 2vh;
     margin-top: 1vh;
 }
 
 @mixin nright($image){
-    $url: "./multimedia/#{$image}.jpg";
+    $url: "../multimedia/#{$image}.jpg";
     background-image:url($url);
     background-size: cover;
     background-position: center;
@@ -18,7 +18,7 @@
 }
 
 @mixin nleft_mobile($image){
-    $url: "./multimedia/#{$image}.jpg";
+    $url: "../multimedia/#{$image}.jpg";
     background-image:url($url);
     background-size: cover;
     background-position: center;
@@ -28,7 +28,7 @@
 }
 
 @mixin fondo_gen($image){
-    $url: "./multimedia/#{$image}.jpg";
+    $url: "../multimedia/#{$image}.jpg";
     background-image:url($url);
     background-size: cover;
     background-position: center;

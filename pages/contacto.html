@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
         <!-- Bootstrap fin 4.6 -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-      <link rel="stylesheet"  href="../style.css">
+      <link rel="stylesheet"  href="../css/style.css">
       <title>Green Wrap🌮</title>
   </head>
 
@@ -55,17 +55,17 @@
           </div>
         </section>
           <div class="contacto__formulario">
-                <form action="enviar.php" method="post" enctype="application/x-www-form-urlencoded" netlify>
+                <form action="error404.html">
                     <div class="contacto__formulario__casillas d-flex flex-column">
                       <input type="date" class="contacto__formulario__datos">
-                      <input type="text"required placeholder="Nombre y Apellido" class="contacto__formulario__datos">
+                      <input type="text" required placeholder="Nombre y Apellido" class="contacto__formulario__datos">
                       <input type="number" required placeholder="Edad" class="contacto__formulario__datos">
                       <input type="email" required placeholder="Correo" class="contacto__formulario__datos">
                       <input type="number" required placeholder="Teléfono" class="contacto__formulario__datos">
-                      <textarea name="areadetexto" required id="" cols="30" rows="5" placeholder="Ingrese su comentario" class="contacto__formulario__datos"></textarea>
+                      <textarea name="areadetexto" id="" cols="30" rows="5" required placeholder="Ingrese su comentario" class="contacto__formulario__datos"></textarea>
                     </div>
                     <div class="contacto__formulario__botones">
-                      <input type="submit" value="Enviar"> <!--class="btn btn-outline-dark"-->
+                      <input type="submit" value="Enviar">
                       <input type="reset" value="Borrar"> 
                     </div>
                 </form>
