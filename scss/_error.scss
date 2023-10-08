@@ -1,0 +1,23 @@
+/*Estilado del error 404*/
+.main_error404{
+    @include fondo_gen(plato_vacio);
+    height: 100vh;
+    padding: 15vh 0 15vh 0;
+    .box__error404{
+        font-family:map-get($fuentes, fuente_index), sans-serif;
+        color: map-get($colores, blanco);
+        font-weight: bold;
+        .box__error404__texto__ancla{
+            padding-top: 3%;
+            .main__index__ancla{
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                color: map-get($colores, verde);
+                text-decoration: none;
+                font-size:1.3rem;
+                &:hover{
+                    color:rgb(162, 152, 152);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,145 @@
+/*Estilado del index*/
+
+.main__index{
+    min-height:calc(100vh);
+    width: 100%;
+    .index__fondo{
+        @include fondo_gen(fondo_index);
+        padding-bottom: 5vw;
+        .index__titulo{ 
+            font-family:map-get($fuentes, fuente_index), sans-serif;
+            font-size:1.25rem;
+            text-align: center;
+            background-color:map-get($fondos,transp_grisoscuro);
+            padding: 5vh;
+            color: map-get($colores, negro);
+        }
+        .index__menu{
+            justify-content: space-around;
+            width: 100%;
+            margin-top: 5vw;
+            .index__cajachica__ancla{
+                font-weight: bold;
+                text-align: center;
+                font-family:C, sans-serif;
+                text-decoration:none;
+                color: map-get($colores, negro);
+                width: 15%;
+                &:hover{
+                    color:rgb(162, 152, 152);
+                }
+            }
+        }
+    }
+    .index__contenedorcard{
+        margin: 10vh auto;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        width: 90%;
+        list-style-type: none;
+        .index__card{
+            min-height: 10vh;
+            background-color:map-get($fondos,solido_grisclaro);
+            .index__card__fondoveggie, .index__card__fondovegetarianos, .index__card__fondotradicionales, .index__card__fondoespeciales{
+                display: none;
+            }
+            .index__card__contenidoveggie{
+                @include nleft_mobile(veggie);
+            }
+            
+            .index__card__contenidovegetarianos{
+                @include nleft_mobile(vegetarianos);
+            }
+                
+            .index__card__contenidotradicionales{
+                @include nleft_mobile(tradicionales);
+            }
+                
+            .index__card__contenidoespeciales{
+                @include nleft_mobile(especiales);
+            }
+            .index__card__contenido__fondo{
+                margin: 10vh auto;
+                background-color:map-get($fondos,transp_grisclaro);
+                border-radius: 10px;
+                #veggie, #vegetarianos, #tradicionales, #especiales{
+                    @include menu_anclas();
+                    .index__card__subtitulo{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (min-width: 576px){
+    .main__index{
+        .index__contenedorcard{
+            .index__card{
+                .index__card__fondoveggie{
+                    display: initial;
+                    @include nright(veggie);
+                }
+                .index__card__fondotradicionales{
+                    display: initial;
+                    @include nright(tradicionales);
+                }
+                .index__card__fondovegetarianos{
+                    display: initial;
+                    @include nright(vegetarianos);
+                }
+                
+                .index__card__fondoespeciales{
+                    display: initial;
+                    @include nright(especiales);
+                }
+                .index__card__contenidoveggie, .index__card__contenidovegetarianos, .index__card__contenidotradicionales, .index__card__contenidoespeciales{ 
+                    @include nleft();
+                    background-image: none;
+                }
+                .index__card__contenido__fondo{
+                    background-color:initial;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+@media only screen and (max-width: 1000px) {
+    .main__index{
+        .index__fondo{
+            .index__menu{
+                .index__menu__gustos__lista {
+                    display: none;
+                }
+                .index__cajachica__ancla{
+                    background-color:map-get($fondos,transp_grisoscuro);
+                    justify-content: start;
+                    font-size:1.25rem;
+                    border-radius: 4px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px){ 
+    .main__index{
+        .index__fondo{
+            .index__menu{
+                .index__menu__gustos{
+                    background-color:map-get($fondos,transp_grisoscuro);
+                    border-radius: 10px;
+                    color: map-get($colores, negro);
+                    font-size:1.56rem;
+                    width: 15%;
+                    list-style-type: none;
+                }
+            }
+        }
+    }
+}
