@@ -437,7 +437,7 @@
   align-items: center;
 }
 .main_news .news__contenedor__carrusel .news__box__carrusel .news__box__card1 {
-  min-height: 500px;
+  height: 500px;
 }
 .main_news .news__contenedor__carrusel .news__box__carrusel .news__box__card1 .news__box__card1__texto {
   background-image: url("../multimedia/envasado.jpg");
@@ -445,11 +445,7 @@
   background-position: center;
   min-width: auto;
   height: 100%;
-  padding: 15%;
-}
-.main_news .news__contenedor__carrusel .news__box__carrusel .news__box__card1 .news__box__card1__texto .news__box__carrusel__titulo {
-  text-align: center;
-  color: white;
+  padding-top: 15%;
 }
 .main_news .news__contenedor__carrusel .news__box__carrusel .news__box__card1 .news__box__card1__texto .news__card1__texto {
   background-color: rgba(255, 255, 255, 0.5);
@@ -491,11 +487,7 @@
   }
   .main_news .news__contenedor__carrusel .news__box__carrusel .news__box__card1 .news__box__card1__texto {
     background-image: none;
-    padding: initial;
-    padding: 8% 3%;
-  }
-  .main_news .news__contenedor__carrusel .news__box__carrusel .news__box__card1 .news__box__card1__texto .news__box__carrusel__titulo {
-    display: none;
+    padding-top: 8%;
   }
   .main_news .news__contenedor__carrusel .news__box__carrusel .news__box__card1 .news__box__card1__texto .news__card1__texto {
     background-color: initial;

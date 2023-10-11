@@ -10,12 +10,16 @@
             height: 100%;
             align-items: center;
             .news__box__card1{
-                height: 500px;
+                min-height: 500px;
                 .news__box__card1__texto{
                     @include fondo_gen(envasado);
                     min-width: auto;
                     height: 100%;
-                    padding-top: 15%;
+                    padding: 15%;
+                    .news__box__carrusel__titulo{
+                        text-align: center;
+                        color: white;
+                    }
                     .news__card1__texto{
                         background-color:map-get($fondos,transp_grisclaro);
                     }
@@ -62,7 +66,11 @@
                 .news__box__card1{                   
                     .news__box__card1__texto{
                         background-image:none;
-                        padding-top:8%;                      
+                        padding: initial;
+                        padding:8% 3%;                      
+                        .news__box__carrusel__titulo{
+                            display: none;
+                        }
                         .news__card1__texto{
                             background-color: initial;
                         }
