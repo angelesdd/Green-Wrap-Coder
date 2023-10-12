@@ -445,7 +445,7 @@
   background-position: center;
   min-width: auto;
   height: 100%;
-  padding: 15%;
+  padding: 5%;
 }
 .main_news .news__contenedor__carrusel .news__box__carrusel .news__box__card1 .news__box__card1__texto .news__box__carrusel__titulo {
   text-align: center;
@@ -453,6 +453,7 @@
 }
 .main_news .news__contenedor__carrusel .news__box__carrusel .news__box__card1 .news__box__card1__texto .news__card1__texto {
   background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
 }
 .main_news .news__contenedor__carrusel .news__box__carrusel .news__box__card1 .news__box__card1__texto .news__card1__info {
   display: none;

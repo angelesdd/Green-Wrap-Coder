@@ -15,13 +15,14 @@
                     @include fondo_gen(envasado);
                     min-width: auto;
                     height: 100%;
-                    padding: 15%;
+                    padding: 5%;
                     .news__box__carrusel__titulo{
                         text-align: center;
                         color: white;
                     }
                     .news__card1__texto{
                         background-color:map-get($fondos,transp_grisclaro);
+                        border-radius: 10px;
                     }
                     .news__card1__info{
                         display: none;
